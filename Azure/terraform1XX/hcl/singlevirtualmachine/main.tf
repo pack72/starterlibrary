@@ -189,7 +189,6 @@ resource "azurerm_virtual_machine" "vm" {
     vhd_uri       = "${azurerm_storage_account.default.primary_blob_endpoint}${azurerm_storage_container.default.name}/${var.name_prefix}-vm-os-disk1.vhd"
     caching       = "ReadWrite"
     create_option = "FromImage"
-    storage_account_type = "Standard_LRS"
   }
 
   os_profile {
