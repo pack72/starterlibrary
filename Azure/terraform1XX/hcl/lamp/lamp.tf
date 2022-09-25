@@ -213,7 +213,7 @@ resource "azurerm_virtual_machine" "web-alternative" {
   location              = var.azure_region
   resource_group_name   = azurerm_resource_group.default.name
   network_interface_ids = [azurerm_network_interface.web.id]
-  vm_size               = "Standard_A2"
+  vm_size               = "Standard_DS1_v2"
   tags                  = module.camtags.tagsmap
 
   storage_image_reference {
@@ -225,7 +225,6 @@ resource "azurerm_virtual_machine" "web-alternative" {
 
   storage_os_disk {
     name          = "${var.name_prefix}-${random_id.default.hex}-web-os-disk1"
-    vhd_uri       = "${azurerm_storage_account.default.primary_blob_endpoint}${azurerm_storage_container.default.name}/${var.name_prefix}-${random_id.default.hex}-web-os-disk1.vhd"
     caching       = "ReadWrite"
     create_option = "FromImage"
   }
