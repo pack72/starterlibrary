@@ -37,7 +37,7 @@
       },
       {
         "title": "Operating systems supported",
-        "description": "Ubuntu 14.4.01 x64"
+        "description": "ubuntu-20.04.x86_64"
       },
       {
         "title": "Topology",
@@ -45,7 +45,7 @@
       },
       {
         "title": "Default virtual machine settings",
-        "description": "<ul><li>Openstack:<ul style=\"margin-left: 20px;\"><li>Ubuntu 16.04</li><ul style=\"margin-left: 20px;\"><li>Flavor: Cores = 1, Memory = 1GB, Storage = 25GB SAN</li><li>Network: Private IP - Computed, Public IP - Computed</li></ul></ul>"
+        "description": "<ul><li>Openstack:<ul style=\"margin-left: 20px;\"><li>ubuntu 20.04 lts</li><ul style=\"margin-left: 20px;\"><li>Flavor: Cores = 4, Memory = 8GB, Storage = 100GB SAN</li><li>Network: Private IP - Computed, Public IP - Computed</li></ul></ul>"
       },
       {
         "title": "Usage and special notes",
